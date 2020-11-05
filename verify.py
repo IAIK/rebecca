@@ -15,6 +15,12 @@ from logger import logger
 
 setrecursionlimit(10000)
 
+def check_file(file_name, file_ending, file_type):
+	if not file_name.endswith(file_ending):
+		print('ERR: specified ' + str(file_type) + ' ' + str(file_name) + ' does not have ' + str(file_ending) + ' ending')
+		exit()
+	return
+
 def verify_circuit(circuit_file, labeling, order, mode='transient', log='tmp/report.txt'):
 	secrets = ', '.join(
 		[var for k in labeling for var in labeling[k] if 's_' in var])
@@ -46,16 +52,22 @@ if __name__ == '__main__':
 	parser.add_argument('-o', '--optimized', action='store_true',
 		help='run verification in parallel')
 	parser.add_argument('-c', '--check', nargs=4, metavar=('<netlist>', '<order>', '<labeling>', '<mode>'),
-		help='check if a netlist <netlist> is <order>-order secure with the <labeling> as initial labeling; mode = s (stable) | t (transient)')
+		help='check if a parsed netlist <netlist> is <order>-order secure with the <labeling> as initial labeling; mode = s (stable) | t (transient)')
 	parser.add_argument('-i', '--independence-check', nargs=3, metavar=('<netlist>', '<order>', '<labeling>'),
-		help='check if a netlist <netlist> is <order>-order independent with the <labeling> as initial labeling')
+		help='check if a parsed netlist <netlist> is <order>-order independent with the <labeling> as initial labeling')
 	args = vars(parser.parse_args())
 	if args['parse_verilog']:
-		parse_verilog(args['parse_verilog'][0], args['parse_verilog'][1])
+		netlist = args['parse_verilog'][0]
+		check_file(netlist, '.v', 'netlist')
+		parse_verilog(netlist, args['parse_verilog'][1])
 	if args['independence_check']:
-		shares = get_shares(args['independence_check'][2])
-		labels = generate_labeling(args['independence_check'][2])[0]
-		circuit = CircuitGraph(labels, json_file=args['independence_check'][0])
+		labeling = args['independence_check'][2]
+		check_file(labeling, '.txt', 'labeling')
+		shares = get_shares(labeling)
+		labels = generate_labeling(labeling)[0]
+		netlist = args['independence_check'][0]
+		check_file(netlist, '.json', 'parsed netlist')
+		circuit = CircuitGraph(labels, json_file=netlist)
 		if is_int(args['independence_check'][1]):
 			order = int(args['independence_check'][1])
 		else:
@@ -66,10 +78,14 @@ if __name__ == '__main__':
 		print(checker.check())
 	if args['check']:
 		labels = []
+		netlist = args['check'][0]
+		check_file(netlist, '.json', 'parsed netlist')
+		labeling = args['check'][2]
+		check_file(labeling, '.txt', 'labeling')
 		if args['optimized']:
-			labels = generate_optimized_labeling(args['check'][2])
+			labels = generate_optimized_labeling(labeling)
 		else:
-			labels = generate_labeling(args['check'][2])
+			labels = generate_labeling(labeling)
 		if is_int(args['check'][1]):
 			order = int(args['check'][1])
 		else:
@@ -86,11 +102,11 @@ if __name__ == '__main__':
 			args['check'][0], order, mode))
 		for l in labels:
 			logger.info('Initial labeling:\n{}'.format(get_pretty_labeling(
-				l, args['check'][2])))
+				l, labeling)))
 		pool_len = len(labels) if len(labels) <= 10 else 10
 		with Pool(pool_len) as p:
 			res = p.starmap(verify_circuit,
-				[(args['check'][0], l, order, mode) for l in labels])
+				[(netlist, l, order, mode) for l in labels])
 		for r in res:
 			if not r[0]:
 				print(r)
