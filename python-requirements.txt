@@ -1,0 +1,3 @@
+# Keep sorted.
+networkx == 1.11
+z3-solver

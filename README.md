@@ -4,7 +4,24 @@ REBECCA is a tool for the formal verification of masked cryptographic hardware i
 
 This is a re-publication of the [original code](https://github.com/riusupov/rebecca) of the REBECCA tool which was developed as part of the paper [Formal Verification of Masked Hardware Implementations in the Presence of Glitches](https://eprint.iacr.org/2017/897.pdf) from EUROCRYPT 2018. This code version is identical to the original one, except for added declarations for the used Apache 2.0 license.
 
+## Prerequisites
+
+### Python Dependencies
+
+REBECCA has a couple of Python dependencies. You can run
+```console
+$ pip install --user -r python_requirements.txt
 ```
+to install those dependencies.
+
+### Yosys
+
+REBECCA requires the [Yosys Open SYnthesis Suite](https://github.com/YosysHQ/yosys) to be installed.
+
+## Usage
+
+```console
+$ ./verify -h
 usage: ./verify [-h] [-v] [-p <netlist> <top module>] [-o]
                 [-c <netlist> <order> <labeling> <mode>]
                 [-i <netlist> <order> <labeling>]
