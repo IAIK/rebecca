@@ -1,4 +1,9 @@
 # rebecca
+
+REBECCA is a tool for the formal verification of masked cryptographic hardware implementations that, given the netlist of a masked hardware circuit, determines if a correct separation between shares is preserved throughout the circuit.
+
+This is a re-publication of the original code of the REBECCA tool which was developed as part of the paper [Formal Verification of Masked Hardware Implementations in the Presence of Glitches](https://eprint.iacr.org/2017/897.pdf) from EUROCRYPT 2018. This code version is identical to the original one, except for an added Apache 2.0 license file.
+
 ```
 usage: ./verify [-h] [-v] [-p <netlist> <top module>] [-o]
                 [-c <netlist> <order> <labeling> <mode>]
