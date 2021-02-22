@@ -1,4 +1,7 @@
-#!/home/rieyu/projects/masking/bin/python3
+#!/usr/bin/env python3
+# Copyright IAIK TU Graz.
+# Licensed under the Apache License, Version 2.0, see LICENSE for details.
+# SPDX-License-Identifier: Apache-2.0
 
 from argparse import ArgumentParser, FileType
 from helpers import *
