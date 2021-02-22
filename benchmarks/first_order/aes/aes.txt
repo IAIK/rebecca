@@ -1,0 +1,72 @@
+Binv1xDI[0]_46: unimportant
+Binv1xDI[0]_47: unimportant
+Binv1xDI[1]_48: unimportant
+Binv1xDI[1]_49: unimportant
+Binv2xDI[0]_50: unimportant
+Binv2xDI[0]_51: unimportant
+Binv2xDI[1]_52: unimportant
+Binv2xDI[1]_53: unimportant
+Binv3xDI[0]_54: unimportant
+Binv3xDI[0]_55: unimportant
+Binv3xDI[1]_56: unimportant
+Binv3xDI[1]_57: unimportant
+Bmul1xDI[0]_38: unimportant
+Bmul1xDI[0]_39: unimportant
+Bmul1xDI[0]_40: unimportant
+Bmul1xDI[0]_41: unimportant
+Bmul1xDI[1]_42: unimportant
+Bmul1xDI[1]_43: unimportant
+Bmul1xDI[1]_44: unimportant
+Bmul1xDI[1]_45: unimportant
+ClkxCI_2: unimportant
+QxDO[0]_58: unimportant
+QxDO[0]_59: unimportant
+QxDO[0]_60: unimportant
+QxDO[0]_61: unimportant
+QxDO[0]_62: unimportant
+QxDO[0]_63: unimportant
+QxDO[0]_64: unimportant
+QxDO[0]_65: unimportant
+QxDO[1]_66: unimportant
+QxDO[1]_67: unimportant
+QxDO[1]_68: unimportant
+QxDO[1]_69: unimportant
+QxDO[1]_70: unimportant
+QxDO[1]_71: unimportant
+QxDO[1]_72: unimportant
+QxDO[1]_73: unimportant
+RstxBI_3: unimportant
+XxDI[0]_10: share 7
+XxDI[0]_11: share 8
+XxDI[0]_4: share 1
+XxDI[0]_5: share 2
+XxDI[0]_6: share 3
+XxDI[0]_7: share 4
+XxDI[0]_8: share 5
+XxDI[0]_9: share 6
+XxDI[1]_12: share 1
+XxDI[1]_13: share 2
+XxDI[1]_14: share 3
+XxDI[1]_15: share 4
+XxDI[1]_16: share 5
+XxDI[1]_17: share 6
+XxDI[1]_18: share 7
+XxDI[1]_19: share 8
+Zinv1xDI[0]_32: mask
+Zinv1xDI[0]_33: mask
+Zinv2xDI[0]_34: mask
+Zinv2xDI[0]_35: mask
+Zinv3xDI[0]_36: mask
+Zinv3xDI[0]_37: mask
+Zmul1xDI[0]_20: mask
+Zmul1xDI[0]_21: mask
+Zmul1xDI[0]_22: mask
+Zmul1xDI[0]_23: mask
+Zmul2xDI[0]_24: mask
+Zmul2xDI[0]_25: mask
+Zmul2xDI[0]_26: mask
+Zmul2xDI[0]_27: mask
+Zmul3xDI[0]_28: mask
+Zmul3xDI[0]_29: mask
+Zmul3xDI[0]_30: mask
+Zmul3xDI[0]_31: mask

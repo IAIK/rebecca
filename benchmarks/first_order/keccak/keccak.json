@@ -1,0 +1,2320 @@
+{
+  "creator": "Yosys 0.7+ (git sha1 UNKNOWN, clang  -fPIC -Os)",
+  "top_module": "keccak_sbox",
+  "modules": {
+    "keccak_sbox": {
+      "attributes": {
+        "top": 1,
+        "src": "benchmarks/first_order/keccak/keccak_sbox.v:32"
+      },
+      "ports": {
+        "ClkxCI": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "RstxRBI": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "EnablexSI": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "IotaRCxDI": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "InputxDI": {
+          "direction": "input",
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ]
+        },
+        "ZxDI": {
+          "direction": "input",
+          "bits": [ 16, 17, 18, 19, 20 ]
+        },
+        "OutputxDO": {
+          "direction": "output",
+          "bits": [ 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:37:simplemap_not$113": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:42"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "Y": [ 31 ]
+          }
+        },
+        "$auto$simplemap.cc:37:simplemap_not$122": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:51"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "Y": [ 32 ]
+          }
+        },
+        "$auto$simplemap.cc:37:simplemap_not$125": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:54"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "Y": [ 33 ]
+          }
+        },
+        "$auto$simplemap.cc:37:simplemap_not$134": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:63"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13 ],
+            "Y": [ 34 ]
+          }
+        },
+        "$auto$simplemap.cc:37:simplemap_not$137": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:66"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "Y": [ 35 ]
+          }
+        },
+        "$auto$simplemap.cc:37:simplemap_not$146": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:75"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "Y": [ 36 ]
+          }
+        },
+        "$auto$simplemap.cc:37:simplemap_not$149": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:78"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "Y": [ 37 ]
+          }
+        },
+        "$auto$simplemap.cc:37:simplemap_not$158": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:87"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "Y": [ 38 ]
+          }
+        },
+        "$auto$simplemap.cc:37:simplemap_not$161": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:90"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "Y": [ 39 ]
+          }
+        },
+        "$auto$simplemap.cc:37:simplemap_not$170": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:99"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "Y": [ 40 ]
+          }
+        },
+        "$auto$simplemap.cc:37:simplemap_not$173": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:102"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$174": {
+          "hide_name": 1,
+          "type": "$_DFF_PP0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:142"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 42 ],
+            "Q": [ 43 ],
+            "R": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$175": {
+          "hide_name": 1,
+          "type": "$_DFF_PP0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:142"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 44 ],
+            "Q": [ 45 ],
+            "R": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$176": {
+          "hide_name": 1,
+          "type": "$_DFF_PP0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:142"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 46 ],
+            "Q": [ 47 ],
+            "R": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$177": {
+          "hide_name": 1,
+          "type": "$_DFF_PP0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:142"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 48 ],
+            "Q": [ 49 ],
+            "R": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$178": {
+          "hide_name": 1,
+          "type": "$_DFF_PP0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:142"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 50 ],
+            "Q": [ 51 ],
+            "R": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$179": {
+          "hide_name": 1,
+          "type": "$_DFF_PP0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:142"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 52 ],
+            "Q": [ 53 ],
+            "R": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$180": {
+          "hide_name": 1,
+          "type": "$_DFF_PP0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:142"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 54 ],
+            "Q": [ 55 ],
+            "R": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$181": {
+          "hide_name": 1,
+          "type": "$_DFF_PP0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:142"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 56 ],
+            "Q": [ 57 ],
+            "R": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$182": {
+          "hide_name": 1,
+          "type": "$_DFF_PP0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:142"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 58 ],
+            "Q": [ 59 ],
+            "R": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:496:simplemap_adff$183": {
+          "hide_name": 1,
+          "type": "$_DFF_PP0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:142"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 60 ],
+            "Q": [ 61 ],
+            "R": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$114": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:43"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "B": [ 8 ],
+            "Y": [ 62 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$115": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:44"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 62 ],
+            "Y": [ 63 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$116": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:45"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 13 ],
+            "Y": [ 64 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$117": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:46"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 64 ],
+            "B": [ 16 ],
+            "Y": [ 42 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$118": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 63 ],
+            "B": [ 43 ],
+            "Y": [ 21 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$119": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B": [ 8 ],
+            "Y": [ 65 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$120": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 65 ],
+            "B": [ 16 ],
+            "Y": [ 52 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$121": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 53 ],
+            "B": [ 11 ],
+            "Y": [ 66 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$123": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 32 ],
+            "B": [ 13 ],
+            "Y": [ 67 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$124": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 66 ],
+            "B": [ 67 ],
+            "Y": [ 26 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$126": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:55"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33 ],
+            "B": [ 9 ],
+            "Y": [ 68 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$127": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 68 ],
+            "Y": [ 69 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$128": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:57"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "B": [ 14 ],
+            "Y": [ 70 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$129": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:58"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 70 ],
+            "B": [ 17 ],
+            "Y": [ 44 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$130": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:59"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 69 ],
+            "B": [ 45 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$131": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:60"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13 ],
+            "B": [ 9 ],
+            "Y": [ 71 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$132": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:61"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 71 ],
+            "B": [ 17 ],
+            "Y": [ 54 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$133": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:62"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 55 ],
+            "B": [ 12 ],
+            "Y": [ 72 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$135": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:64"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "B": [ 14 ],
+            "Y": [ 73 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$136": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:65"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 72 ],
+            "B": [ 73 ],
+            "Y": [ 27 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$138": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:67"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 35 ],
+            "B": [ 10 ],
+            "Y": [ 74 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$139": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:68"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "B": [ 74 ],
+            "Y": [ 75 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$140": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:69"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 15 ],
+            "Y": [ 76 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$141": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 76 ],
+            "B": [ 18 ],
+            "Y": [ 46 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$142": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:71"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 75 ],
+            "B": [ 47 ],
+            "Y": [ 23 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$143": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:72"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "B": [ 10 ],
+            "Y": [ 77 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$144": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:73"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 77 ],
+            "B": [ 18 ],
+            "Y": [ 56 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$145": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:74"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 57 ],
+            "B": [ 13 ],
+            "Y": [ 78 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$147": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:76"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 36 ],
+            "B": [ 15 ],
+            "Y": [ 79 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$148": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:77"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 78 ],
+            "B": [ 79 ],
+            "Y": [ 28 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$150": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:79"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 37 ],
+            "B": [ 6 ],
+            "Y": [ 80 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$151": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:80"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 80 ],
+            "Y": [ 81 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$152": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:81"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 11 ],
+            "Y": [ 82 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$153": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:82"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 82 ],
+            "B": [ 19 ],
+            "Y": [ 48 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$154": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:83"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 81 ],
+            "B": [ 49 ],
+            "Y": [ 24 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$155": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 6 ],
+            "Y": [ 83 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$156": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:85"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 83 ],
+            "B": [ 19 ],
+            "Y": [ 58 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$157": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:86"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 59 ],
+            "B": [ 14 ],
+            "Y": [ 84 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$159": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:88"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 38 ],
+            "B": [ 11 ],
+            "Y": [ 85 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$160": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:89"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 84 ],
+            "B": [ 85 ],
+            "Y": [ 29 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$162": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:91"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 39 ],
+            "B": [ 7 ],
+            "Y": [ 86 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$163": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:92"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 86 ],
+            "Y": [ 87 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$164": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:93"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 12 ],
+            "Y": [ 88 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$165": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:94"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 88 ],
+            "B": [ 20 ],
+            "Y": [ 50 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$166": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:95"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 87 ],
+            "B": [ 51 ],
+            "Y": [ 25 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$167": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:96"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B": [ 7 ],
+            "Y": [ 89 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$168": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:97"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 89 ],
+            "B": [ 20 ],
+            "Y": [ 60 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$169": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:98"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 61 ],
+            "B": [ 15 ],
+            "Y": [ 90 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$171": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:100"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 40 ],
+            "B": [ 12 ],
+            "Y": [ 91 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$172": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:101"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 90 ],
+            "B": [ 91 ],
+            "Y": [ 30 ]
+          }
+        }
+      },
+      "netnames": {
+        "ClkxCI": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:34"
+          }
+        },
+        "EnablexSI": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:34"
+          }
+        },
+        "FFxDN": {
+          "hide_name": 0,
+          "bits": [ 42, 44, 46, 48, 50, 52, 54, 56, 58, 60 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:38"
+          }
+        },
+        "FFxDP": {
+          "hide_name": 0,
+          "bits": [ 43, 45, 47, 49, 51, 53, 55, 57, 59, 61 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:39"
+          }
+        },
+        "FFxDP_reg[0].aclr": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[0].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[0].d": {
+          "hide_name": 0,
+          "bits": [ 42 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[0].q": {
+          "hide_name": 0,
+          "bits": [ 43 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:139"
+          }
+        },
+        "FFxDP_reg[0].qi": {
+          "hide_name": 0,
+          "bits": [ 43 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:140"
+          }
+        },
+        "FFxDP_reg[0].sena": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138",
+            "unused_bits": "0"
+          }
+        },
+        "FFxDP_reg[1].aclr": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[1].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[1].d": {
+          "hide_name": 0,
+          "bits": [ 44 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[1].q": {
+          "hide_name": 0,
+          "bits": [ 45 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:139"
+          }
+        },
+        "FFxDP_reg[1].qi": {
+          "hide_name": 0,
+          "bits": [ 45 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:140"
+          }
+        },
+        "FFxDP_reg[1].sena": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138",
+            "unused_bits": "0"
+          }
+        },
+        "FFxDP_reg[2].aclr": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[2].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[2].d": {
+          "hide_name": 0,
+          "bits": [ 46 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[2].q": {
+          "hide_name": 0,
+          "bits": [ 47 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:139"
+          }
+        },
+        "FFxDP_reg[2].qi": {
+          "hide_name": 0,
+          "bits": [ 47 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:140"
+          }
+        },
+        "FFxDP_reg[2].sena": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138",
+            "unused_bits": "0"
+          }
+        },
+        "FFxDP_reg[3].aclr": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[3].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[3].d": {
+          "hide_name": 0,
+          "bits": [ 48 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[3].q": {
+          "hide_name": 0,
+          "bits": [ 49 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:139"
+          }
+        },
+        "FFxDP_reg[3].qi": {
+          "hide_name": 0,
+          "bits": [ 49 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:140"
+          }
+        },
+        "FFxDP_reg[3].sena": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138",
+            "unused_bits": "0"
+          }
+        },
+        "FFxDP_reg[4].aclr": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[4].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[4].d": {
+          "hide_name": 0,
+          "bits": [ 50 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[4].q": {
+          "hide_name": 0,
+          "bits": [ 51 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:139"
+          }
+        },
+        "FFxDP_reg[4].qi": {
+          "hide_name": 0,
+          "bits": [ 51 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:140"
+          }
+        },
+        "FFxDP_reg[4].sena": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138",
+            "unused_bits": "0"
+          }
+        },
+        "FFxDP_reg[5].aclr": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[5].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[5].d": {
+          "hide_name": 0,
+          "bits": [ 52 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[5].q": {
+          "hide_name": 0,
+          "bits": [ 53 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:139"
+          }
+        },
+        "FFxDP_reg[5].qi": {
+          "hide_name": 0,
+          "bits": [ 53 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:140"
+          }
+        },
+        "FFxDP_reg[5].sena": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138",
+            "unused_bits": "0"
+          }
+        },
+        "FFxDP_reg[6].aclr": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[6].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[6].d": {
+          "hide_name": 0,
+          "bits": [ 54 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[6].q": {
+          "hide_name": 0,
+          "bits": [ 55 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:139"
+          }
+        },
+        "FFxDP_reg[6].qi": {
+          "hide_name": 0,
+          "bits": [ 55 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:140"
+          }
+        },
+        "FFxDP_reg[6].sena": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138",
+            "unused_bits": "0"
+          }
+        },
+        "FFxDP_reg[7].aclr": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[7].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[7].d": {
+          "hide_name": 0,
+          "bits": [ 56 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[7].q": {
+          "hide_name": 0,
+          "bits": [ 57 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:139"
+          }
+        },
+        "FFxDP_reg[7].qi": {
+          "hide_name": 0,
+          "bits": [ 57 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:140"
+          }
+        },
+        "FFxDP_reg[7].sena": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138",
+            "unused_bits": "0"
+          }
+        },
+        "FFxDP_reg[8].aclr": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[8].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[8].d": {
+          "hide_name": 0,
+          "bits": [ 58 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[8].q": {
+          "hide_name": 0,
+          "bits": [ 59 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:139"
+          }
+        },
+        "FFxDP_reg[8].qi": {
+          "hide_name": 0,
+          "bits": [ 59 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:140"
+          }
+        },
+        "FFxDP_reg[8].sena": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138",
+            "unused_bits": "0"
+          }
+        },
+        "FFxDP_reg[9].aclr": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[9].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[9].d": {
+          "hide_name": 0,
+          "bits": [ 60 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138"
+          }
+        },
+        "FFxDP_reg[9].q": {
+          "hide_name": 0,
+          "bits": [ 61 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:139"
+          }
+        },
+        "FFxDP_reg[9].qi": {
+          "hide_name": 0,
+          "bits": [ 61 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:140"
+          }
+        },
+        "FFxDP_reg[9].sena": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:138",
+            "unused_bits": "0"
+          }
+        },
+        "InputxDI": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:35"
+          }
+        },
+        "IotaRCxDI": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:34"
+          }
+        },
+        "OutputxDO": {
+          "hide_name": 0,
+          "bits": [ 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:37"
+          }
+        },
+        "RstxRBI": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:34"
+          }
+        },
+        "SBOX.result[0]": {
+          "hide_name": 0,
+          "bits": [ 63 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:44"
+          }
+        },
+        "SBOX.result[0]_54": {
+          "hide_name": 0,
+          "bits": [ 69 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:56"
+          }
+        },
+        "SBOX.result[0]_67": {
+          "hide_name": 0,
+          "bits": [ 75 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:68"
+          }
+        },
+        "SBOX.result[0]_78": {
+          "hide_name": 0,
+          "bits": [ 81 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:80"
+          }
+        },
+        "SBOX.result[0]_89": {
+          "hide_name": 0,
+          "bits": [ 87 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:92"
+          }
+        },
+        "ZxDI": {
+          "hide_name": 0,
+          "bits": [ 16, 17, 18, 19, 20 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:36"
+          }
+        },
+        "mux_FFxDP_114_10.ctl": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:7"
+          }
+        },
+        "mux_FFxDP_114_10.g1.inv_sel0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:176"
+          }
+        },
+        "mux_FFxDP_114_10.g1.sel0": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:174"
+          }
+        },
+        "mux_FFxDP_114_10.g10.inv_sel0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:176"
+          }
+        },
+        "mux_FFxDP_114_10.g10.sel0": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:174"
+          }
+        },
+        "mux_FFxDP_114_10.g2.inv_sel0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:176"
+          }
+        },
+        "mux_FFxDP_114_10.g2.sel0": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:174"
+          }
+        },
+        "mux_FFxDP_114_10.g3.inv_sel0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:176"
+          }
+        },
+        "mux_FFxDP_114_10.g3.sel0": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:174"
+          }
+        },
+        "mux_FFxDP_114_10.g4.inv_sel0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:176"
+          }
+        },
+        "mux_FFxDP_114_10.g4.sel0": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:174"
+          }
+        },
+        "mux_FFxDP_114_10.g5.inv_sel0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:176"
+          }
+        },
+        "mux_FFxDP_114_10.g5.sel0": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:174"
+          }
+        },
+        "mux_FFxDP_114_10.g6.inv_sel0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:176"
+          }
+        },
+        "mux_FFxDP_114_10.g6.sel0": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:174"
+          }
+        },
+        "mux_FFxDP_114_10.g7.inv_sel0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:176"
+          }
+        },
+        "mux_FFxDP_114_10.g7.sel0": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:174"
+          }
+        },
+        "mux_FFxDP_114_10.g8.inv_sel0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:176"
+          }
+        },
+        "mux_FFxDP_114_10.g8.sel0": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:174"
+          }
+        },
+        "mux_FFxDP_114_10.g9.inv_sel0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:176"
+          }
+        },
+        "mux_FFxDP_114_10.g9.sel0": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:174"
+          }
+        },
+        "n_21": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:40"
+          }
+        },
+        "n_34": {
+          "hide_name": 0,
+          "bits": [ 31 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:42"
+          }
+        },
+        "n_37": {
+          "hide_name": 0,
+          "bits": [ 62 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:43"
+          }
+        },
+        "n_38": {
+          "hide_name": 0,
+          "bits": [ 64 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:45"
+          }
+        },
+        "n_41": {
+          "hide_name": 0,
+          "bits": [ 65 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:48"
+          }
+        },
+        "n_44": {
+          "hide_name": 0,
+          "bits": [ 32 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:51"
+          }
+        },
+        "n_45": {
+          "hide_name": 0,
+          "bits": [ 66 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:50"
+          }
+        },
+        "n_46": {
+          "hide_name": 0,
+          "bits": [ 67 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:52"
+          }
+        },
+        "n_47": {
+          "hide_name": 0,
+          "bits": [ 33 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:54"
+          }
+        },
+        "n_50": {
+          "hide_name": 0,
+          "bits": [ 68 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:55"
+          }
+        },
+        "n_52": {
+          "hide_name": 0,
+          "bits": [ 70 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:57"
+          }
+        },
+        "n_55": {
+          "hide_name": 0,
+          "bits": [ 71 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:60"
+          }
+        },
+        "n_57": {
+          "hide_name": 0,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:63"
+          }
+        },
+        "n_58": {
+          "hide_name": 0,
+          "bits": [ 72 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:62"
+          }
+        },
+        "n_59": {
+          "hide_name": 0,
+          "bits": [ 73 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:64"
+          }
+        },
+        "n_60": {
+          "hide_name": 0,
+          "bits": [ 35 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:66"
+          }
+        },
+        "n_63": {
+          "hide_name": 0,
+          "bits": [ 74 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:67"
+          }
+        },
+        "n_65": {
+          "hide_name": 0,
+          "bits": [ 76 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:69"
+          }
+        },
+        "n_68": {
+          "hide_name": 0,
+          "bits": [ 77 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:72"
+          }
+        },
+        "n_70": {
+          "hide_name": 0,
+          "bits": [ 36 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:75"
+          }
+        },
+        "n_71": {
+          "hide_name": 0,
+          "bits": [ 78 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:74"
+          }
+        },
+        "n_72": {
+          "hide_name": 0,
+          "bits": [ 79 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:76"
+          }
+        },
+        "n_73": {
+          "hide_name": 0,
+          "bits": [ 37 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:78"
+          }
+        },
+        "n_75": {
+          "hide_name": 0,
+          "bits": [ 80 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:79"
+          }
+        },
+        "n_76": {
+          "hide_name": 0,
+          "bits": [ 82 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:81"
+          }
+        },
+        "n_79": {
+          "hide_name": 0,
+          "bits": [ 83 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:84"
+          }
+        },
+        "n_81": {
+          "hide_name": 0,
+          "bits": [ 38 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:87"
+          }
+        },
+        "n_82": {
+          "hide_name": 0,
+          "bits": [ 84 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:86"
+          }
+        },
+        "n_83": {
+          "hide_name": 0,
+          "bits": [ 85 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:88"
+          }
+        },
+        "n_84": {
+          "hide_name": 0,
+          "bits": [ 39 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:90"
+          }
+        },
+        "n_86": {
+          "hide_name": 0,
+          "bits": [ 86 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:91"
+          }
+        },
+        "n_87": {
+          "hide_name": 0,
+          "bits": [ 88 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:93"
+          }
+        },
+        "n_90": {
+          "hide_name": 0,
+          "bits": [ 89 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:96"
+          }
+        },
+        "n_92": {
+          "hide_name": 0,
+          "bits": [ 40 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:99"
+          }
+        },
+        "n_93": {
+          "hide_name": 0,
+          "bits": [ 90 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:98"
+          }
+        },
+        "n_94": {
+          "hide_name": 0,
+          "bits": [ 91 ],
+          "attributes": {
+            "src": "benchmarks/first_order/keccak/keccak_sbox.v:100"
+          }
+        }
+      }
+    }
+  }
+}

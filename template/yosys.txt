@@ -1,0 +1,16 @@
+% for file in input_files:
+read_verilog ${file};
+%endfor
+hierarchy -check -top ${top_module};
+proc;
+flatten;
+
+opt;
+memory;
+opt;
+techmap;
+opt;
+
+write_verilog -noattr tmp/out.v;
+write_ilang tmp/out.ilang;
+write_json tmp/out.json;

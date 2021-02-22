@@ -1,0 +1,7 @@
+am_2: share 1
+bm_4: share 2
+m0_6: mask
+ma_3: share 1
+mb_5: share 2
+mq_8: unimportant
+qm_7: unimportant

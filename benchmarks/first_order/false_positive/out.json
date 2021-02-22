@@ -1,0 +1,731 @@
+{
+ "top_module": "dom_and",
+ "modules": {
+  "dom_and": {
+   "attributes": {
+    "top": 1,
+    "src": "../benchmarks/false_positive/dom_and.v:20"
+   },
+   "netnames": {
+    "n_a1": {
+     "bits": [
+      13
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:35"
+     }
+    },
+    "YxDI": {
+     "bits": [
+      6,
+      7
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:22"
+     }
+    },
+    "FFxDP_reg[2].qi": {
+     "bits": [
+      16
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "init": 0,
+      "src": "../benchmarks/false_positive/dom_and.v:80"
+     }
+    },
+    "FFxDP_reg[1].d": {
+     "bits": [
+      17
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:78"
+     }
+    },
+    "FFxDP": {
+     "bits": [
+      24,
+      18,
+      16,
+      25
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:25"
+     }
+    },
+    "n_13": {
+     "bits": [
+      15
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:41"
+     }
+    },
+    "n_t21": {
+     "bits": [
+      23
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:38"
+     }
+    },
+    "FFxDP_reg[0].d": {
+     "bits": [
+      21
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:78"
+     }
+    },
+    "FFxDP_reg[3].d": {
+     "bits": [
+      19
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:78"
+     }
+    },
+    "mux_FFxDP_78_15.g4.inv_sel0": {
+     "bits": [
+      3
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:116"
+     }
+    },
+    "Xi_mul_Yj[0]": {
+     "bits": [
+      21
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:31"
+     }
+    },
+    "ZxDI": {
+     "bits": [
+      8
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:23"
+     }
+    },
+    "RstxBI": {
+     "bits": [
+      3
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:21"
+     }
+    },
+    "FFxDP_reg[0].clk": {
+     "bits": [
+      2
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:78"
+     }
+    },
+    "FFxDP_reg[3].clk": {
+     "bits": [
+      2
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:78"
+     }
+    },
+    "FFxDP_reg[2].d": {
+     "bits": [
+      15
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:78"
+     }
+    },
+    "mux_FFxDP_78_15.g2.inv_sel0": {
+     "bits": [
+      3
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:116"
+     }
+    },
+    "Xi_mul_Yj_37": {
+     "bits": [
+      20
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:29"
+     }
+    },
+    "$techmap\\FFxDP_reg[0].$auto$proc_dff.cc:124:gen_dffsr_complex$40": {
+     "bits": [
+      11
+     ],
+     "hide_name": 1,
+     "attributes": {}
+    },
+    "FFxDP_reg[1].clk": {
+     "bits": [
+      2
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:78"
+     }
+    },
+    "mux_FFxDP_78_15.g1.inv_sel0": {
+     "bits": [
+      3
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:116"
+     }
+    },
+    "QxDO": {
+     "bits": [
+      9,
+      10
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:24"
+     }
+    },
+    "FFxDP_reg[2].q": {
+     "bits": [
+      16
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:79"
+     }
+    },
+    "n_11": {
+     "bits": [
+      17
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:39"
+     }
+    },
+    "Xi_mul_Yj[3]": {
+     "bits": [
+      19
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:28"
+     }
+    },
+    "FFxDP_reg[2].clk": {
+     "bits": [
+      2
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:78"
+     }
+    },
+    "mux_FFxDP_78_15.g3.inv_sel0": {
+     "bits": [
+      3
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:116"
+     }
+    },
+    "XxDI": {
+     "bits": [
+      4,
+      5
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:22"
+     }
+    },
+    "n_b1": {
+     "bits": [
+      14
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:36"
+     }
+    },
+    "FFxDP_reg[1].qi": {
+     "bits": [
+      18
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "init": 0,
+      "src": "../benchmarks/false_positive/dom_and.v:80"
+     }
+    },
+    "Xi_mul_Yj": {
+     "bits": [
+      12
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:30"
+     }
+    },
+    "n_t11": {
+     "bits": [
+      22
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:37"
+     }
+    },
+    "FFxDP_reg[1].q": {
+     "bits": [
+      18
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:79"
+     }
+    },
+    "ClkxCI": {
+     "bits": [
+      2
+     ],
+     "hide_name": 0,
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:21"
+     }
+    }
+   },
+   "cells": {
+    "$auto$simplemap.cc:85:simplemap_bitop$96": {
+     "hide_name": 1,
+     "type": "$_XOR_",
+     "port_directions": {
+      "A": "input",
+      "B": "input",
+      "Y": "output"
+     },
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:48"
+     },
+     "connections": {
+      "A": [
+       16
+      ],
+      "B": [
+       19
+      ],
+      "Y": [
+       10
+      ]
+     },
+     "parameters": {}
+    },
+    "$auto$simplemap.cc:37:simplemap_not$90": {
+     "hide_name": 1,
+     "type": "$_NOT_",
+     "port_directions": {
+      "A": "input",
+      "Y": "output"
+     },
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:35"
+     },
+     "connections": {
+      "A": [
+       12
+      ],
+      "Y": [
+       13
+      ]
+     },
+     "parameters": {}
+    },
+    "$auto$simplemap.cc:85:simplemap_bitop$86": {
+     "hide_name": 1,
+     "type": "$_AND_",
+     "port_directions": {
+      "A": "input",
+      "B": "input",
+      "Y": "output"
+     },
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:28"
+     },
+     "connections": {
+      "A": [
+       5
+      ],
+      "B": [
+       7
+      ],
+      "Y": [
+       19
+      ]
+     },
+     "parameters": {}
+    },
+    "$auto$simplemap.cc:85:simplemap_bitop$97": {
+     "hide_name": 1,
+     "type": "$_XOR_",
+     "port_directions": {
+      "A": "input",
+      "B": "input",
+      "Y": "output"
+     },
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:55"
+     },
+     "connections": {
+      "A": [
+       21
+      ],
+      "B": [
+       18
+      ],
+      "Y": [
+       9
+      ]
+     },
+     "parameters": {}
+    },
+    "$auto$simplemap.cc:85:simplemap_bitop$95": {
+     "hide_name": 1,
+     "type": "$_XOR_",
+     "port_directions": {
+      "A": "input",
+      "B": "input",
+      "Y": "output"
+     },
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:41"
+     },
+     "connections": {
+      "A": [
+       20
+      ],
+      "B": [
+       8
+      ],
+      "Y": [
+       15
+      ]
+     },
+     "parameters": {}
+    },
+    "$auto$simplemap.cc:85:simplemap_bitop$93": {
+     "hide_name": 1,
+     "type": "$_AND_",
+     "port_directions": {
+      "A": "input",
+      "B": "input",
+      "Y": "output"
+     },
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:38"
+     },
+     "connections": {
+      "A": [
+       8
+      ],
+      "B": [
+       13
+      ],
+      "Y": [
+       23
+      ]
+     },
+     "parameters": {}
+    },
+    "$auto$simplemap.cc:85:simplemap_bitop$88": {
+     "hide_name": 1,
+     "type": "$_AND_",
+     "port_directions": {
+      "A": "input",
+      "B": "input",
+      "Y": "output"
+     },
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:30"
+     },
+     "connections": {
+      "A": [
+       4
+      ],
+      "B": [
+       7
+      ],
+      "Y": [
+       12
+      ]
+     },
+     "parameters": {}
+    },
+    "$auto$simplemap.cc:85:simplemap_bitop$94": {
+     "hide_name": 1,
+     "type": "$_OR_",
+     "port_directions": {
+      "A": "input",
+      "B": "input",
+      "Y": "output"
+     },
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:39"
+     },
+     "connections": {
+      "A": [
+       22
+      ],
+      "B": [
+       23
+      ],
+      "Y": [
+       17
+      ]
+     },
+     "parameters": {}
+    },
+    "$auto$simplemap.cc:467:simplemap_dffsr$99": {
+     "hide_name": 1,
+     "type": "$_DFFSR_PPP_",
+     "port_directions": {
+      "R": "input",
+      "C": "input",
+      "S": "input",
+      "D": "input",
+      "Q": "output"
+     },
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:82"
+     },
+     "connections": {
+      "R": [
+       11
+      ],
+      "C": [
+       2
+      ],
+      "S": [
+       "0"
+      ],
+      "D": [
+       17
+      ],
+      "Q": [
+       18
+      ]
+     },
+     "parameters": {}
+    },
+    "$auto$simplemap.cc:467:simplemap_dffsr$100": {
+     "hide_name": 1,
+     "type": "$_DFFSR_PPP_",
+     "port_directions": {
+      "R": "input",
+      "C": "input",
+      "S": "input",
+      "D": "input",
+      "Q": "output"
+     },
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:82"
+     },
+     "connections": {
+      "R": [
+       11
+      ],
+      "C": [
+       2
+      ],
+      "S": [
+       "0"
+      ],
+      "D": [
+       15
+      ],
+      "Q": [
+       16
+      ]
+     },
+     "parameters": {}
+    },
+    "$auto$simplemap.cc:85:simplemap_bitop$87": {
+     "hide_name": 1,
+     "type": "$_AND_",
+     "port_directions": {
+      "A": "input",
+      "B": "input",
+      "Y": "output"
+     },
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:29"
+     },
+     "connections": {
+      "A": [
+       5
+      ],
+      "B": [
+       6
+      ],
+      "Y": [
+       20
+      ]
+     },
+     "parameters": {}
+    },
+    "$auto$simplemap.cc:85:simplemap_bitop$92": {
+     "hide_name": 1,
+     "type": "$_AND_",
+     "port_directions": {
+      "A": "input",
+      "B": "input",
+      "Y": "output"
+     },
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:37"
+     },
+     "connections": {
+      "A": [
+       12
+      ],
+      "B": [
+       14
+      ],
+      "Y": [
+       22
+      ]
+     },
+     "parameters": {}
+    },
+    "$auto$simplemap.cc:37:simplemap_not$91": {
+     "hide_name": 1,
+     "type": "$_NOT_",
+     "port_directions": {
+      "A": "input",
+      "Y": "output"
+     },
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:36"
+     },
+     "connections": {
+      "A": [
+       8
+      ],
+      "Y": [
+       14
+      ]
+     },
+     "parameters": {}
+    },
+    "$auto$simplemap.cc:277:simplemap_mux$98": {
+     "hide_name": 1,
+     "type": "$_NOT_",
+     "port_directions": {
+      "A": "input",
+      "Y": "output"
+     },
+     "attributes": {},
+     "connections": {
+      "A": [
+       3
+      ],
+      "Y": [
+       11
+      ]
+     },
+     "parameters": {}
+    },
+    "$auto$simplemap.cc:85:simplemap_bitop$89": {
+     "hide_name": 1,
+     "type": "$_AND_",
+     "port_directions": {
+      "A": "input",
+      "B": "input",
+      "Y": "output"
+     },
+     "attributes": {
+      "src": "../benchmarks/false_positive/dom_and.v:31"
+     },
+     "connections": {
+      "A": [
+       4
+      ],
+      "B": [
+       6
+      ],
+      "Y": [
+       21
+      ]
+     },
+     "parameters": {}
+    }
+   },
+   "ports": {
+    "RstxBI": {
+     "bits": [
+      3
+     ],
+     "direction": "input"
+    },
+    "ClkxCI": {
+     "bits": [
+      2
+     ],
+     "direction": "input"
+    },
+    "XxDI": {
+     "bits": [
+      4,
+      5
+     ],
+     "direction": "input"
+    },
+    "QxDO": {
+     "bits": [
+      9,
+      10
+     ],
+     "direction": "output"
+    },
+    "YxDI": {
+     "bits": [
+      6,
+      7
+     ],
+     "direction": "input"
+    },
+    "ZxDI": {
+     "bits": [
+      8
+     ],
+     "direction": "input"
+    }
+   }
+  }
+ },
+ "creator": "Yosys 0.7+ (git sha1 UNKNOWN, clang  -fPIC -Os)"
+}

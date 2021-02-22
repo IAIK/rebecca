@@ -1,0 +1,14 @@
+ClkxCI_2: unimportant
+QxDO_13: unimportant
+QxDO_14: unimportant
+QxDO_15: unimportant
+RstxBI_3: unimportant
+XxDI_4: share 1
+XxDI_5: share 1
+XxDI_6: share 1
+YxDI_7: share 2
+YxDI_8: share 2
+YxDI_9: share 2
+ZxDI_10: mask
+ZxDI_11: mask
+ZxDI_12: mask

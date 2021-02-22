@@ -1,0 +1,29 @@
+ClkxCI_2: unimportant
+EnablexSI_4: unimportant
+InputxDI_10: share 5
+InputxDI_11: share 1
+InputxDI_12: share 2
+InputxDI_13: share 3
+InputxDI_14: share 4
+InputxDI_15: share 5
+InputxDI_6: share 1
+InputxDI_7: share 2
+InputxDI_8: share 3
+InputxDI_9: share 4
+IotaRCxDI_5: unimportant
+OutputxDO_21: unimportant
+OutputxDO_22: unimportant
+OutputxDO_23: unimportant
+OutputxDO_24: unimportant
+OutputxDO_25: unimportant
+OutputxDO_26: unimportant
+OutputxDO_27: unimportant
+OutputxDO_28: unimportant
+OutputxDO_29: unimportant
+OutputxDO_30: unimportant
+RstxRBI_3: unimportant
+ZxDI_16: mask
+ZxDI_17: mask
+ZxDI_18: mask
+ZxDI_19: mask
+ZxDI_20: mask

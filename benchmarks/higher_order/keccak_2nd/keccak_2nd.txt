@@ -1,0 +1,48 @@
+ClkxCI_2: unimportant
+InputxDI_10: share 1
+InputxDI_11: share 2
+InputxDI_12: share 3
+InputxDI_13: share 4
+InputxDI_14: share 5
+InputxDI_15: share 1
+InputxDI_16: share 2
+InputxDI_17: share 3
+InputxDI_18: share 4
+InputxDI_19: share 5
+InputxDI_5: share 1
+InputxDI_6: share 2
+InputxDI_7: share 3
+InputxDI_8: share 4
+InputxDI_9: share 5
+IotaRCxDI_4: unimportant
+OutputxDO_35: unimportant
+OutputxDO_36: unimportant
+OutputxDO_37: unimportant
+OutputxDO_38: unimportant
+OutputxDO_39: unimportant
+OutputxDO_40: unimportant
+OutputxDO_41: unimportant
+OutputxDO_42: unimportant
+OutputxDO_43: unimportant
+OutputxDO_44: unimportant
+OutputxDO_45: unimportant
+OutputxDO_46: unimportant
+OutputxDO_47: unimportant
+OutputxDO_48: unimportant
+OutputxDO_49: unimportant
+RstxRBI_3: unimportant
+ZxDI_20: mask
+ZxDI_21: mask
+ZxDI_22: mask
+ZxDI_23: mask
+ZxDI_24: mask
+ZxDI_25: mask
+ZxDI_26: mask
+ZxDI_27: mask
+ZxDI_28: mask
+ZxDI_29: mask
+ZxDI_30: mask
+ZxDI_31: mask
+ZxDI_32: mask
+ZxDI_33: mask
+ZxDI_34: mask

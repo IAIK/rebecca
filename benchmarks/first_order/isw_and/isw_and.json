@@ -1,0 +1,404 @@
+{
+ "top_module": "mul_isw",
+ "modules": {
+  "mul_isw": {
+   "cells": {
+    "$auto$simplemap.cc:85:simplemap_bitop$58": {
+     "type": "$_XOR_",
+     "connections": {
+      "B": [
+       13
+      ],
+      "Y": [
+       7
+      ],
+      "A": [
+       12
+      ]
+     },
+     "port_directions": {
+      "B": "input",
+      "Y": "output",
+      "A": "input"
+     },
+     "hide_name": 1,
+     "parameters": {},
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:35"
+     }
+    },
+    "$auto$simplemap.cc:85:simplemap_bitop$55": {
+     "type": "$_AND_",
+     "connections": {
+      "B": [
+       5
+      ],
+      "Y": [
+       11
+      ],
+      "A": [
+       2
+      ]
+     },
+     "port_directions": {
+      "B": "input",
+      "Y": "output",
+      "A": "input"
+     },
+     "hide_name": 1,
+     "parameters": {},
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:35"
+     }
+    },
+    "$auto$simplemap.cc:85:simplemap_bitop$59": {
+     "type": "$_AND_",
+     "connections": {
+      "B": [
+       4
+      ],
+      "Y": [
+       14
+      ],
+      "A": [
+       2
+      ]
+     },
+     "port_directions": {
+      "B": "input",
+      "Y": "output",
+      "A": "input"
+     },
+     "hide_name": 1,
+     "parameters": {},
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:37"
+     }
+    },
+    "$auto$simplemap.cc:85:simplemap_bitop$60": {
+     "type": "$_XOR_",
+     "connections": {
+      "B": [
+       6
+      ],
+      "Y": [
+       8
+      ],
+      "A": [
+       14
+      ]
+     },
+     "port_directions": {
+      "B": "input",
+      "Y": "output",
+      "A": "input"
+     },
+     "hide_name": 1,
+     "parameters": {},
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:37"
+     }
+    },
+    "$auto$simplemap.cc:85:simplemap_bitop$57": {
+     "type": "$_AND_",
+     "connections": {
+      "B": [
+       3
+      ],
+      "Y": [
+       13
+      ],
+      "A": [
+       4
+      ]
+     },
+     "port_directions": {
+      "B": "input",
+      "Y": "output",
+      "A": "input"
+     },
+     "hide_name": 1,
+     "parameters": {},
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:35"
+     }
+    },
+    "$auto$simplemap.cc:85:simplemap_bitop$53": {
+     "type": "$_AND_",
+     "connections": {
+      "B": [
+       5
+      ],
+      "Y": [
+       9
+      ],
+      "A": [
+       3
+      ]
+     },
+     "port_directions": {
+      "B": "input",
+      "Y": "output",
+      "A": "input"
+     },
+     "hide_name": 1,
+     "parameters": {},
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:35"
+     }
+    },
+    "$auto$simplemap.cc:85:simplemap_bitop$54": {
+     "type": "$_XOR_",
+     "connections": {
+      "B": [
+       6
+      ],
+      "Y": [
+       10
+      ],
+      "A": [
+       9
+      ]
+     },
+     "port_directions": {
+      "B": "input",
+      "Y": "output",
+      "A": "input"
+     },
+     "hide_name": 1,
+     "parameters": {},
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:35"
+     }
+    },
+    "$auto$simplemap.cc:85:simplemap_bitop$56": {
+     "type": "$_XOR_",
+     "connections": {
+      "B": [
+       11
+      ],
+      "Y": [
+       12
+      ],
+      "A": [
+       10
+      ]
+     },
+     "port_directions": {
+      "B": "input",
+      "Y": "output",
+      "A": "input"
+     },
+     "hide_name": 1,
+     "parameters": {},
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:35"
+     }
+    }
+   },
+   "netnames": {
+    "$and$/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:35$3_Y": {
+     "hide_name": 1,
+     "bits": [
+      11
+     ],
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:35"
+     }
+    },
+    "am": {
+     "hide_name": 0,
+     "bits": [
+      2
+     ],
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:3"
+     }
+    },
+    "$and$/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:37$7_Y": {
+     "hide_name": 1,
+     "bits": [
+      14
+     ],
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:37"
+     }
+    },
+    "bm": {
+     "hide_name": 0,
+     "bits": [
+      4
+     ],
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:7"
+     }
+    },
+    "mb": {
+     "hide_name": 0,
+     "bits": [
+      5
+     ],
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:9"
+     }
+    },
+    "ma": {
+     "hide_name": 0,
+     "bits": [
+      3
+     ],
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:5"
+     }
+    },
+    "$xor$/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:35$4_Y": {
+     "hide_name": 1,
+     "bits": [
+      12
+     ],
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:35"
+     }
+    },
+    "$and$/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:35$5_Y": {
+     "hide_name": 1,
+     "bits": [
+      13
+     ],
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:35"
+     }
+    },
+    "$xor$/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:35$2_Y": {
+     "hide_name": 1,
+     "bits": [
+      10
+     ],
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:35"
+     }
+    },
+    "m0": {
+     "hide_name": 0,
+     "bits": [
+      6
+     ],
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:11"
+     }
+    },
+    "mq": {
+     "hide_name": 0,
+     "bits": [
+      8
+     ],
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:15"
+     }
+    },
+    "$and$/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:35$1_Y": {
+     "hide_name": 1,
+     "bits": [
+      9
+     ],
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:35"
+     }
+    },
+    "qm": {
+     "hide_name": 0,
+     "bits": [
+      7
+     ],
+     "attributes": {
+      "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:13"
+     }
+    }
+   },
+   "attributes": {
+    "top": 1,
+    "src": "/home/rie/projects/masking/code/final/benchmarks/p21/isw_unsec.v:1"
+   },
+   "ports": {
+    "am": {
+     "label": [
+      [
+       "m_1", "x_1"
+      ]
+     ],
+     "bits": [
+      2
+     ],
+     "direction": "input"
+    },
+    "mq": {
+     "label": [
+      [
+       "y_8"
+      ]
+     ],
+     "bits": [
+      8
+     ],
+     "direction": "output"
+    },
+    "bm": {
+     "label": [
+      [
+       "m_2", "x_2"
+      ]
+     ],
+     "bits": [
+      4
+     ],
+     "direction": "input"
+    },
+    "m0": {
+     "label": [
+      [
+       "m_3"
+      ]
+     ],
+     "bits": [
+      6
+     ],
+     "direction": "input"
+    },
+    "mb": {
+     "label": [
+      [
+       "m_2"
+      ]
+     ],
+     "bits": [
+      5
+     ],
+     "direction": "input"
+    },
+    "ma": {
+     "label": [
+      [
+       "m_1"
+      ]
+     ],
+     "bits": [
+      3
+     ],
+     "direction": "input"
+    },
+    "qm": {
+     "label": [
+      [
+       "y_7"
+      ]
+     ],
+     "bits": [
+      7
+     ],
+     "direction": "output"
+    }
+   }
+  }
+ },
+ "creator": "Yosys 0.7+ (git sha1 UNKNOWN, gcc 5.4.0-6ubuntu1~16.04.4 -fPIC -Os)"
+}

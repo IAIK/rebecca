@@ -1,0 +1,9 @@
+am_2: share 1
+bm_5: share 2
+ma0_3: share 1
+ma1_4: share 1
+mb0_6: share 2
+mb1_7: share 2
+q0_8: unimportant
+q1_9: unimportant
+q2_10: unimportant

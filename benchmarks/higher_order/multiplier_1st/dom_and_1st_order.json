@@ -1,0 +1,467 @@
+{
+  "creator": "Yosys 0.7+ (git sha1 UNKNOWN, clang  -fPIC -Os)",
+  "top_module": "dom_and",
+  "modules": {
+    "dom_and": {
+      "attributes": {
+        "top": 1,
+        "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:20"
+      },
+      "ports": {
+        "ClkxCI": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "RstxBI": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "XxDI": {
+          "direction": "input",
+          "bits": [ 4, 5 ]
+        },
+        "YxDI": {
+          "direction": "input",
+          "bits": [ 6, 7 ]
+        },
+        "ZxDI": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "QxDO": {
+          "direction": "output",
+          "bits": [ 9, 10 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:277:simplemap_mux$90": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$auto$simplemap.cc:467:simplemap_dffsr$91": {
+          "hide_name": 1,
+          "type": "$_DFFSR_PPP_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:56"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input",
+            "S": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 12 ],
+            "Q": [ 13 ],
+            "R": [ 11 ],
+            "S": [ "0" ]
+          }
+        },
+        "$auto$simplemap.cc:467:simplemap_dffsr$92": {
+          "hide_name": 1,
+          "type": "$_DFFSR_PPP_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:56"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input",
+            "S": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 14 ],
+            "Q": [ 15 ],
+            "R": [ 11 ],
+            "S": [ "0" ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$82": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 7 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$83": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 6 ],
+            "Y": [ 17 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$84": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 7 ],
+            "Y": [ 18 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$85": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 6 ],
+            "Y": [ 19 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$86": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18 ],
+            "B": [ 8 ],
+            "Y": [ 12 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$87": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 19 ],
+            "B": [ 13 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$88": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:34"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17 ],
+            "B": [ 8 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$89": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 16 ],
+            "Y": [ 10 ]
+          }
+        }
+      },
+      "netnames": {
+        "$techmap\\FFxDP_reg[0].$auto$proc_dff.cc:124:gen_dffsr_complex$36": {
+          "hide_name": 1,
+          "bits": [ 11 ],
+          "attributes": {
+          }
+        },
+        "ClkxCI": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:21"
+          }
+        },
+        "FFxDP": {
+          "hide_name": 0,
+          "bits": [ 20, 13, 15, 21 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:25"
+          }
+        },
+        "FFxDP_reg[0].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:52"
+          }
+        },
+        "FFxDP_reg[0].d": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:52"
+          }
+        },
+        "FFxDP_reg[1].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:52"
+          }
+        },
+        "FFxDP_reg[1].d": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:52"
+          }
+        },
+        "FFxDP_reg[1].q": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:53"
+          }
+        },
+        "FFxDP_reg[1].qi": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "init": 0,
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:54"
+          }
+        },
+        "FFxDP_reg[2].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:52"
+          }
+        },
+        "FFxDP_reg[2].d": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:52"
+          }
+        },
+        "FFxDP_reg[2].q": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:53"
+          }
+        },
+        "FFxDP_reg[2].qi": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "init": 0,
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:54"
+          }
+        },
+        "FFxDP_reg[3].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:52"
+          }
+        },
+        "FFxDP_reg[3].d": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:52"
+          }
+        },
+        "QxDO": {
+          "hide_name": 0,
+          "bits": [ 9, 10 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:24"
+          }
+        },
+        "RstxBI": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:21"
+          }
+        },
+        "Xi_mul_Yj": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:30"
+          }
+        },
+        "Xi_mul_Yj[0]": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:31"
+          }
+        },
+        "Xi_mul_Yj[3]": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:28"
+          }
+        },
+        "Xi_mul_Yj_37": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:29"
+          }
+        },
+        "XxDI": {
+          "hide_name": 0,
+          "bits": [ 4, 5 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:22"
+          }
+        },
+        "YxDI": {
+          "hide_name": 0,
+          "bits": [ 6, 7 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:22"
+          }
+        },
+        "ZxDI": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:23"
+          }
+        },
+        "mux_FFxDP_78_15.g1.inv_sel0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:90"
+          }
+        },
+        "mux_FFxDP_78_15.g2.inv_sel0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:90"
+          }
+        },
+        "mux_FFxDP_78_15.g3.inv_sel0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:90"
+          }
+        },
+        "mux_FFxDP_78_15.g4.inv_sel0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:90"
+          }
+        },
+        "n_11": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:32"
+          }
+        },
+        "n_13": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "benchmarks/multiplier_1st/dom_and_1st_order.v:34"
+          }
+        }
+      }
+    }
+  }
+}

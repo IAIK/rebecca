@@ -1,0 +1,486 @@
+{
+  "creator": "Yosys 0.7+ (git sha1 UNKNOWN, clang  -fPIC -Os)",
+  "top_module": "mul",
+  "modules": {
+    "mul": {
+      "attributes": {
+        "top": 1,
+        "src": "benchmarks/first_order/ti_and/ti_and.v:3"
+      },
+      "ports": {
+        "am": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "ma0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "ma1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "bm": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "mb0": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "mb1": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "q0": {
+          "direction": "output",
+          "bits": [ 8 ]
+        },
+        "q1": {
+          "direction": "output",
+          "bits": [ 9 ]
+        },
+        "q2": {
+          "direction": "output",
+          "bits": [ 10 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:85:simplemap_bitop$60": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:45"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 6 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$61": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:45"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 7 ],
+            "Y": [ 12 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$62": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:45"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B": [ 12 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$63": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:45"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 6 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$64": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:45"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13 ],
+            "B": [ 14 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$65": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 7 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$66": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 7 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$67": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 16 ],
+            "Y": [ 17 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$68": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 5 ],
+            "Y": [ 18 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$69": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17 ],
+            "B": [ 18 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$70": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 5 ],
+            "Y": [ 19 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$71": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 6 ],
+            "Y": [ 20 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$72": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 19 ],
+            "B": [ 20 ],
+            "Y": [ 21 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$73": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 5 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$74": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 21 ],
+            "B": [ 22 ],
+            "Y": [ 10 ]
+          }
+        }
+      },
+      "netnames": {
+        "$and$benchmarks/first_order/ti_and/ti_and.v:45$1_Y": {
+          "hide_name": 1,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:45"
+          }
+        },
+        "$and$benchmarks/first_order/ti_and/ti_and.v:45$2_Y": {
+          "hide_name": 1,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:45"
+          }
+        },
+        "$and$benchmarks/first_order/ti_and/ti_and.v:45$4_Y": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:45"
+          }
+        },
+        "$and$benchmarks/first_order/ti_and/ti_and.v:47$6_Y": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:47"
+          }
+        },
+        "$and$benchmarks/first_order/ti_and/ti_and.v:47$7_Y": {
+          "hide_name": 1,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:47"
+          }
+        },
+        "$and$benchmarks/first_order/ti_and/ti_and.v:47$9_Y": {
+          "hide_name": 1,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:47"
+          }
+        },
+        "$and$benchmarks/first_order/ti_and/ti_and.v:49$11_Y": {
+          "hide_name": 1,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:49"
+          }
+        },
+        "$and$benchmarks/first_order/ti_and/ti_and.v:49$12_Y": {
+          "hide_name": 1,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:49"
+          }
+        },
+        "$and$benchmarks/first_order/ti_and/ti_and.v:49$14_Y": {
+          "hide_name": 1,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:49"
+          }
+        },
+        "$xor$benchmarks/first_order/ti_and/ti_and.v:45$3_Y": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:45"
+          }
+        },
+        "$xor$benchmarks/first_order/ti_and/ti_and.v:47$8_Y": {
+          "hide_name": 1,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:47"
+          }
+        },
+        "$xor$benchmarks/first_order/ti_and/ti_and.v:49$13_Y": {
+          "hide_name": 1,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:49"
+          }
+        },
+        "am": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:5"
+          }
+        },
+        "bm": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:11"
+          }
+        },
+        "ma0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:7"
+          }
+        },
+        "ma1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:9"
+          }
+        },
+        "mb0": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:13"
+          }
+        },
+        "mb1": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:15"
+          }
+        },
+        "q0": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:17"
+          }
+        },
+        "q1": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:19"
+          }
+        },
+        "q2": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "benchmarks/first_order/ti_and/ti_and.v:21"
+          }
+        }
+      }
+    }
+  }
+}

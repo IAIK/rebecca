@@ -1,0 +1,432 @@
+{
+  "creator": "Yosys 0.7+ (git sha1 UNKNOWN, clang  -fPIC -Os)",
+  "top_module": "isw_and",
+  "modules": {
+    "isw_and": {
+      "attributes": {
+        "top": 1,
+        "src": "benchmarks/first_order/trichina/trichina_gate.v:16"
+      },
+      "ports": {
+        "ClkxCI": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "RstxBI": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "XxDI": {
+          "direction": "input",
+          "bits": [ 4, 5 ]
+        },
+        "YxDI": {
+          "direction": "input",
+          "bits": [ 6, 7 ]
+        },
+        "ZxDI": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "QxDO": {
+          "direction": "output",
+          "bits": [ 9, 10 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:277:simplemap_mux$88": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$auto$simplemap.cc:467:simplemap_dffsr$89": {
+          "hide_name": 1,
+          "type": "$_DFFSR_PPP_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:44"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input",
+            "S": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 8 ],
+            "Q": [ 9 ],
+            "R": [ 11 ],
+            "S": [ "0" ]
+          }
+        },
+        "$auto$simplemap.cc:467:simplemap_dffsr$90": {
+          "hide_name": 1,
+          "type": "$_DFFSR_PPP_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:44"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input",
+            "S": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 12 ],
+            "Q": [ 10 ],
+            "R": [ 11 ],
+            "S": [ "0" ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$80": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:22"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 6 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$81": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:23"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 7 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$82": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 6 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$83": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 7 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$84": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13 ],
+            "B": [ 14 ],
+            "Y": [ 17 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$85": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 16 ],
+            "Y": [ 18 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$86": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "B": [ 17 ],
+            "Y": [ 19 ]
+          }
+        },
+        "$auto$simplemap.cc:85:simplemap_bitop$87": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:34"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18 ],
+            "B": [ 19 ],
+            "Y": [ 12 ]
+          }
+        }
+      },
+      "netnames": {
+        "$techmap\\FFxDP_reg[0].$auto$proc_dff.cc:124:gen_dffsr_complex$34": {
+          "hide_name": 1,
+          "bits": [ 11 ],
+          "attributes": {
+          }
+        },
+        "ClkxCI": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:17"
+          }
+        },
+        "FFxDP_reg[0].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:40"
+          }
+        },
+        "FFxDP_reg[0].d": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:40"
+          }
+        },
+        "FFxDP_reg[0].q": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:41"
+          }
+        },
+        "FFxDP_reg[0].qi": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "init": 0,
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:42"
+          }
+        },
+        "FFxDP_reg[1].clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:40"
+          }
+        },
+        "FFxDP_reg[1].d": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:40"
+          }
+        },
+        "FFxDP_reg[1].q": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:41"
+          }
+        },
+        "FFxDP_reg[1].qi": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "init": 0,
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:42"
+          }
+        },
+        "QxDO": {
+          "hide_name": 0,
+          "bits": [ 9, 10 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:20"
+          }
+        },
+        "RstxBI": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:17"
+          }
+        },
+        "XxDI": {
+          "hide_name": 0,
+          "bits": [ 4, 5 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:18"
+          }
+        },
+        "YxDI": {
+          "hide_name": 0,
+          "bits": [ 6, 7 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:18"
+          }
+        },
+        "ZxDI": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:19"
+          }
+        },
+        "mux_FFxDP_58_15.g1.inv_sel0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:78"
+          }
+        },
+        "mux_FFxDP_58_15.g2.inv_sel0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:78"
+          }
+        },
+        "n_29": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:22"
+          }
+        },
+        "n_30": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:23"
+          }
+        },
+        "n_32": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:24"
+          }
+        },
+        "n_34": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:25"
+          }
+        },
+        "n_42": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:31"
+          }
+        },
+        "n_43": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:32"
+          }
+        },
+        "n_44": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:33"
+          }
+        },
+        "n_8": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "benchmarks/first_order/trichina/trichina_gate.v:28"
+          }
+        }
+      }
+    }
+  }
+}
