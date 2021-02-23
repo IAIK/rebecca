@@ -41,11 +41,11 @@ optional arguments:
                         parse verilog file and generate labeling template
   -o, --optimized       run verification in parallel
   -c <netlist> <order> <labeling> <mode>, --check <netlist> <order> <labeling> <mode>
-                        check if a netlist <netlist> is <order>-order secure
+                        check if a parsed netlist <netlist> is <order>-order secure
                         with the <labeling> as initial labeling; mode = s
                         (stable) | t (transient)
   -i <netlist> <order> <labeling>, --independence-check <netlist> <order> <labeling>
-                        check if a netlist <netlist> is <order>-order
+                        check if a parsed netlist <netlist> is <order>-order
                         independent with the <labeling> as initial labeling
 ```
 
